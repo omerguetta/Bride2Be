@@ -63,27 +63,26 @@ header h1 {
     top: 20px;
     left: 20px;
     z-index: 1000;
-    background-color: white; /* רקע לבן */
-    color: #af8dc3; /* צבע הפסים */
-    border: 2px solid #af8dc3; /* מסגרת בצבע תואם */
-    font-size: 24px; /* גודל הפסים קטן יותר */
+    background-color: white;
+    color: #af8dc3;
+    border: 2px solid #af8dc3;
+    font-size: 24px;
     cursor: pointer;
-    border-radius: 8px; /* פינות מעוגלות */
-    padding: 5px 10px; /* ריווח פנימי קטן יותר */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* הצללה למראה תלת-ממדי */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* מעבר חלק */
-    width: 50px; /* רוחב מותאם */
-    height: 50px; /* גובה מותאם */
+    border-radius: 8px;
+    padding: 5px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .menu-button:hover {
-    background-color: #f8f8f8; /* שינוי רקע בלחיצה */
-    transform: scale(1.05); /* הגדלה קלה בלחיצה */
+    background-color: #f8f8f8;
+    transform: scale(1.05);
 }
-
 
 .hamburger-menu {
     position: fixed;
@@ -180,8 +179,6 @@ header h1 {
     color: #d6d5d5;
     text-decoration-line: none;
 }
-
-
 
 /* footer {
 position: absolute;
