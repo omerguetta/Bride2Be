@@ -58,6 +58,128 @@ header h1 {
     border: 2px solid #af8dc3;
 }
 
+.menu-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background-color: white; /* רקע לבן */
+    color: #af8dc3; /* צבע הפסים */
+    border: 2px solid #af8dc3; /* מסגרת בצבע תואם */
+    font-size: 24px; /* גודל הפסים קטן יותר */
+    cursor: pointer;
+    border-radius: 8px; /* פינות מעוגלות */
+    padding: 5px 10px; /* ריווח פנימי קטן יותר */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* הצללה למראה תלת-ממדי */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* מעבר חלק */
+    width: 50px; /* רוחב מותאם */
+    height: 50px; /* גובה מותאם */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-button:hover {
+    background-color: #f8f8f8; /* שינוי רקע בלחיצה */
+    transform: scale(1.05); /* הגדלה קלה בלחיצה */
+}
+
+
+.hamburger-menu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    color: black;
+    transition: left 0.3s ease-in-out;
+    box-shadow: none;
+    z-index: 999;
+}
+
+.hamburger-menu.open {
+    display: flex;
+    left: 0;
+    box-shadow: 0 0 10px rgba(244, 244, 244, 0.5);
+    background-color: white;
+    color: black;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    color: black;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.menu-nav a {
+    color: black;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.menu-nav a:hover {
+    text-decoration: underline;
+}
+
+.top-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.bottom-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: flex-end;
+}
+
+.hamburger-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hamburger-menu li {
+    margin: 10px 0;
+}
+
+.hamburger-menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-family: "Times New Roman", serif;
+}
+
+.hamburger-menu button {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hamburger-menu a:hover {
+    color: #d6d5d5;
+    text-decoration-line: none;
+}
 
 
 
