@@ -5,7 +5,7 @@ const usersRouter = new Router();
 
 usersRouter.get('/',usersController.getUsers);
 usersRouter.get('/:id',usersController.getUsers);
-
+usersRouter.post('/', usersController.registerUser);
 // booksRouter.get('/', booksController.getBooks);
 // booksRouter.get('/:id', booksController.getBook);
 // booksRouter.post('/', booksController.addBook);
