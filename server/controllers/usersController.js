@@ -10,6 +10,7 @@ exports.usersController = {
 
         try {
             const newUser = new User({ name, email, password, role, wedding_date });
+            console.log(newUser);
             await newUser.save();
             res.status(201).json({ message: "User registered successfully!" });
         } catch (error) {

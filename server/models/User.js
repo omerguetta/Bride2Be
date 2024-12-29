@@ -9,6 +9,11 @@ const userSchema = new Schema({
         enum: ["Bride", "Groom", "Other"],
         default: "Bride"
     },
+    coupleType: {
+        type: String,
+        enum: ["BrideAndGroom", "BrideAndBride", "GroomAndGroom"],
+        default: "BrideAndGroom"
+    },
     wedding_date: { type: Date, required: true },
     // tasks: [TaskSchema],
     notifications: [
